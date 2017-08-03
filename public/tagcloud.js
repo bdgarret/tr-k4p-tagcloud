@@ -4,9 +4,9 @@ require('plugins/tr-k4p-tagcloud/tagcloud.css');
 
 // The provider function, which must return our new visualization type
 function TagcloudProvider(Private) {
-	var TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
+	var TemplateVisType = Private(require('ui/template_vis_type/template_vis_type'));
 	// Include the Schemas class, which will be used to define schemas
-	var Schemas = Private(require('ui/Vis/Schemas'));
+	var Schemas = Private(require('ui/vis/schemas'));
 
 	// Describe our visualization
 	return new TemplateVisType({
